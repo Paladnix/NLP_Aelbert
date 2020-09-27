@@ -1,0 +1,187 @@
+07-30 11:21 root     INFO     Namespace(add_crowd=False, batch_size=1000, data_setup='single', dev_data='ontonotes/g_dev.json', dim_hidden=100, enhanced_mention=False, eval_batch_size=1998, eval_data='ontonotes/g_test.json', eval_period=500, goal='open', gpu=False, input_dropout=0.2, learning_rate=0.001, load=True, log_period=1000, lstm_type='two', mention_dropout=0.5, mode='dev', model_id='qqp-test', multitask=False, num_epoch=10, only_crowd=False, reload_model_name='./_model/qqp-train', remove_el=False, remove_open=False, rnn_dim=100, save_period=1000, seed=1777, train_data='ontonotes/augmented_train.json')
+07-30 11:21 transformers.configuration_utils INFO     loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/ybai/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+07-30 11:21 transformers.configuration_utils INFO     Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+07-30 11:21 transformers.modeling_utils INFO     loading weights file https://cdn.huggingface.co/bert-base-uncased-pytorch_model.bin from cache at /home/ybai/.cache/torch/transformers/f2ee78bdd635b758cc0a12352586868bef80e47401abe4c4fcc3832421e7338b.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+07-30 11:21 transformers.modeling_utils INFO     All model checkpoint weights were used when initializing BertModel.
+
+07-30 11:21 transformers.modeling_utils INFO     All the weights of BertModel were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use BertModel for predictions without further training.
+07-30 11:21 transformers.configuration_utils INFO     loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/ybai/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+07-30 11:21 transformers.configuration_utils INFO     Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+07-30 11:21 transformers.modeling_utils INFO     loading weights file https://cdn.huggingface.co/bert-base-uncased-pytorch_model.bin from cache at /home/ybai/.cache/torch/transformers/f2ee78bdd635b758cc0a12352586868bef80e47401abe4c4fcc3832421e7338b.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+07-30 11:21 transformers.modeling_utils INFO     All model checkpoint weights were used when initializing BertModel.
+
+07-30 11:21 transformers.modeling_utils INFO     All the weights of BertModel were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use BertModel for predictions without further training.
+07-30 11:21 root     INFO     load model from: ./_model/qqp-train
+07-30 11:21 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-30 11:21 root     INFO     数据集大小: 10000
+07-30 11:24 root     INFO     Namespace(add_crowd=False, batch_size=1000, data_setup='single', dev_data='ontonotes/g_dev.json', dim_hidden=100, enhanced_mention=False, eval_batch_size=1998, eval_data='ontonotes/g_test.json', eval_period=500, goal='open', gpu=False, input_dropout=0.2, learning_rate=0.001, load=True, log_period=1000, lstm_type='two', mention_dropout=0.5, mode='dev', model_id='qqp-test', multitask=False, num_epoch=10, only_crowd=False, reload_model_name='./_model/qqp-train', remove_el=False, remove_open=False, rnn_dim=100, save_period=1000, seed=1777, train_data='ontonotes/augmented_train.json')
+07-30 11:24 transformers.configuration_utils INFO     loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/ybai/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+07-30 11:24 transformers.configuration_utils INFO     Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+07-30 11:24 transformers.modeling_utils INFO     loading weights file https://cdn.huggingface.co/bert-base-uncased-pytorch_model.bin from cache at /home/ybai/.cache/torch/transformers/f2ee78bdd635b758cc0a12352586868bef80e47401abe4c4fcc3832421e7338b.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+07-30 11:24 transformers.modeling_utils INFO     All model checkpoint weights were used when initializing BertModel.
+
+07-30 11:24 transformers.modeling_utils INFO     All the weights of BertModel were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use BertModel for predictions without further training.
+07-30 11:25 transformers.configuration_utils INFO     loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/ybai/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+07-30 11:25 transformers.configuration_utils INFO     Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+07-30 11:25 transformers.modeling_utils INFO     loading weights file https://cdn.huggingface.co/bert-base-uncased-pytorch_model.bin from cache at /home/ybai/.cache/torch/transformers/f2ee78bdd635b758cc0a12352586868bef80e47401abe4c4fcc3832421e7338b.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+07-30 11:25 transformers.modeling_utils INFO     All model checkpoint weights were used when initializing BertModel.
+
+07-30 11:25 transformers.modeling_utils INFO     All the weights of BertModel were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use BertModel for predictions without further training.
+07-30 11:25 root     INFO     load model from: ./_model/qqp-train
+07-30 11:25 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-30 11:25 root     INFO     数据集大小: 10000
+07-30 11:25 transformers.tokenization_utils ERROR    We need to remove 149 to truncate the inputbut the first sequence has a length 118. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-30 11:25 transformers.tokenization_utils ERROR    We need to remove 303 to truncate the inputbut the first sequence has a length 230. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-30 11:26 root     INFO     DEV_AND_TEST
+07-30 11:26 root     INFO     tloss: 0.1863
+07-30 11:26 root     INFO     acc:   0.9243
+07-30 11:26 root     INFO     auc:   0.9243
+07-30 11:26 root     INFO     f1:    0.9249
+07-30 11:29 root     INFO     Namespace(add_crowd=False, batch_size=1000, data_setup='single', dev_data='ontonotes/g_dev.json', dim_hidden=100, enhanced_mention=False, eval_batch_size=1998, eval_data='ontonotes/g_test.json', eval_period=500, goal='open', gpu=False, input_dropout=0.2, learning_rate=0.001, load=True, log_period=1000, lstm_type='two', mention_dropout=0.5, mode='dev', model_id='qqp-test', multitask=False, num_epoch=10, only_crowd=False, reload_model_name='./_model/qqp-train', remove_el=False, remove_open=False, rnn_dim=100, save_period=1000, seed=1777, train_data='ontonotes/augmented_train.json')
+07-30 11:29 transformers.configuration_utils INFO     loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/ybai/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+07-30 11:29 transformers.configuration_utils INFO     Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+07-30 11:29 transformers.modeling_utils INFO     loading weights file https://cdn.huggingface.co/bert-base-uncased-pytorch_model.bin from cache at /home/ybai/.cache/torch/transformers/f2ee78bdd635b758cc0a12352586868bef80e47401abe4c4fcc3832421e7338b.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+07-30 11:29 transformers.modeling_utils INFO     All model checkpoint weights were used when initializing BertModel.
+
+07-30 11:29 transformers.modeling_utils INFO     All the weights of BertModel were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use BertModel for predictions without further training.
+07-30 11:29 transformers.configuration_utils INFO     loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/ybai/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+07-30 11:29 transformers.configuration_utils INFO     Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+07-30 11:29 transformers.modeling_utils INFO     loading weights file https://cdn.huggingface.co/bert-base-uncased-pytorch_model.bin from cache at /home/ybai/.cache/torch/transformers/f2ee78bdd635b758cc0a12352586868bef80e47401abe4c4fcc3832421e7338b.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+07-30 11:29 transformers.modeling_utils INFO     All model checkpoint weights were used when initializing BertModel.
+
+07-30 11:29 transformers.modeling_utils INFO     All the weights of BertModel were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use BertModel for predictions without further training.
+07-30 11:29 root     INFO     load model from: ./_model/qqp-train
+07-30 11:29 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-30 11:29 root     INFO     数据集大小: 10000
+07-30 11:29 transformers.tokenization_utils ERROR    We need to remove 50 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-30 11:30 root     INFO     DEV_AND_TEST
+07-30 11:30 root     INFO     tloss: 0.2030
+07-30 11:30 root     INFO     acc:   0.9172
+07-30 11:30 root     INFO     auc:   0.9172
+07-30 11:30 root     INFO     f1:    0.9177

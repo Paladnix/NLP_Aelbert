@@ -1,0 +1,270 @@
+07-29 10:30 root     INFO     Namespace(add_crowd=False, batch_size=1000, data_setup='single', dev_data='ontonotes/g_dev.json', dim_hidden=100, enhanced_mention=False, eval_batch_size=1998, eval_data='ontonotes/g_test.json', eval_period=500, goal='open', gpu=False, input_dropout=0.2, learning_rate=0.001, load=True, log_period=1000, lstm_type='two', mention_dropout=0.5, mode='train', model_id='paws-train', multitask=False, num_epoch=20, only_crowd=False, reload_model_name='./_model/qqp-paws-train', remove_el=False, remove_open=False, rnn_dim=100, save_period=1000, seed=1777, train_data='ontonotes/augmented_train.json')
+07-29 10:30 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 10:30 root     INFO     数据集大小: 11988
+07-29 10:30 transformers.configuration_utils INFO     loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/ybai/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+07-29 10:30 transformers.configuration_utils INFO     Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+07-29 10:30 transformers.modeling_utils INFO     loading weights file https://cdn.huggingface.co/bert-base-uncased-pytorch_model.bin from cache at /home/ybai/.cache/torch/transformers/f2ee78bdd635b758cc0a12352586868bef80e47401abe4c4fcc3832421e7338b.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+07-29 10:30 transformers.modeling_utils INFO     All model checkpoint weights were used when initializing BertModel.
+
+07-29 10:30 transformers.modeling_utils INFO     All the weights of BertModel were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use BertModel for predictions without further training.
+07-29 10:30 transformers.configuration_utils INFO     loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/ybai/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+07-29 10:30 transformers.configuration_utils INFO     Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+07-29 10:30 transformers.modeling_utils INFO     loading weights file https://cdn.huggingface.co/bert-base-uncased-pytorch_model.bin from cache at /home/ybai/.cache/torch/transformers/f2ee78bdd635b758cc0a12352586868bef80e47401abe4c4fcc3832421e7338b.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+07-29 10:30 transformers.modeling_utils INFO     All model checkpoint weights were used when initializing BertModel.
+
+07-29 10:30 transformers.modeling_utils INFO     All the weights of BertModel were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use BertModel for predictions without further training.
+07-29 10:30 root     INFO     load model from: ./_model/qqp-paws-train
+07-29 10:30 root     INFO     The 0 epoch.
+07-29 10:31 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:31 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:32 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:34 root     INFO     Train
+07-29 10:34 root     INFO     tloss: 0.2065
+07-29 10:34 root     INFO     acc:   0.9173
+07-29 10:34 root     INFO     auc:   0.8987
+07-29 10:34 root     INFO     f1:    0.8660
+07-29 10:34 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 10:34 root     INFO     数据集大小: 677
+07-29 10:34 root     INFO     DEV_AND_TEST
+07-29 10:34 root     INFO     tloss: 0.5708
+07-29 10:34 root     INFO     acc:   0.8006
+07-29 10:34 root     INFO     auc:   0.8214
+07-29 10:34 root     INFO     f1:    0.7109
+07-29 10:34 root     INFO     The 1 epoch.
+07-29 10:35 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:37 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:37 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:38 root     INFO     Train
+07-29 10:38 root     INFO     tloss: 0.1970
+07-29 10:38 root     INFO     acc:   0.9231
+07-29 10:38 root     INFO     auc:   0.9056
+07-29 10:38 root     INFO     f1:    0.8755
+07-29 10:38 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 10:38 root     INFO     数据集大小: 677
+07-29 10:38 root     INFO     DEV_AND_TEST
+07-29 10:38 root     INFO     tloss: 0.4622
+07-29 10:38 root     INFO     acc:   0.8301
+07-29 10:38 root     INFO     auc:   0.8277
+07-29 10:38 root     INFO     f1:    0.7319
+07-29 10:38 root     INFO     The 2 epoch.
+07-29 10:38 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:39 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:40 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:42 root     INFO     Train
+07-29 10:42 root     INFO     tloss: 0.1836
+07-29 10:42 root     INFO     acc:   0.9258
+07-29 10:42 root     INFO     auc:   0.9094
+07-29 10:42 root     INFO     f1:    0.8802
+07-29 10:42 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 10:42 root     INFO     数据集大小: 677
+07-29 10:42 root     INFO     DEV_AND_TEST
+07-29 10:42 root     INFO     tloss: 0.5295
+07-29 10:42 root     INFO     acc:   0.8227
+07-29 10:42 root     INFO     auc:   0.8289
+07-29 10:42 root     INFO     f1:    0.7285
+07-29 10:43 root     INFO     The 3 epoch.
+07-29 10:43 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:43 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:45 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:46 root     INFO     Train
+07-29 10:46 root     INFO     tloss: 0.1755
+07-29 10:46 root     INFO     acc:   0.9285
+07-29 10:46 root     INFO     auc:   0.9128
+07-29 10:46 root     INFO     f1:    0.8846
+07-29 10:46 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 10:46 root     INFO     数据集大小: 677
+07-29 10:47 root     INFO     DEV_AND_TEST
+07-29 10:47 root     INFO     tloss: 0.4976
+07-29 10:47 root     INFO     acc:   0.8272
+07-29 10:47 root     INFO     auc:   0.8304
+07-29 10:47 root     INFO     f1:    0.7323
+07-29 10:47 root     INFO     The 4 epoch.
+07-29 10:47 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:50 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:50 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:51 root     INFO     Train
+07-29 10:51 root     INFO     tloss: 0.1637
+07-29 10:51 root     INFO     acc:   0.9348
+07-29 10:51 root     INFO     auc:   0.9213
+07-29 10:51 root     INFO     f1:    0.8953
+07-29 10:51 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 10:51 root     INFO     数据集大小: 677
+07-29 10:51 root     INFO     DEV_AND_TEST
+07-29 10:51 root     INFO     tloss: 0.6160
+07-29 10:51 root     INFO     acc:   0.8006
+07-29 10:51 root     INFO     auc:   0.8182
+07-29 10:51 root     INFO     f1:    0.7084
+07-29 10:51 root     INFO     The 5 epoch.
+07-29 10:51 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:51 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:51 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:55 root     INFO     Train
+07-29 10:55 root     INFO     tloss: 0.1562
+07-29 10:55 root     INFO     acc:   0.9379
+07-29 10:55 root     INFO     auc:   0.9261
+07-29 10:55 root     INFO     f1:    0.9008
+07-29 10:55 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 10:55 root     INFO     数据集大小: 677
+07-29 10:55 root     INFO     DEV_AND_TEST
+07-29 10:55 root     INFO     tloss: 0.6250
+07-29 10:55 root     INFO     acc:   0.8065
+07-29 10:55 root     INFO     auc:   0.8319
+07-29 10:55 root     INFO     f1:    0.7219
+07-29 10:55 root     INFO     The 6 epoch.
+07-29 10:55 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:56 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:58 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 10:59 root     INFO     Train
+07-29 10:59 root     INFO     tloss: 0.1459
+07-29 10:59 root     INFO     acc:   0.9449
+07-29 10:59 root     INFO     auc:   0.9334
+07-29 10:59 root     INFO     f1:    0.9116
+07-29 10:59 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 10:59 root     INFO     数据集大小: 677
+07-29 10:59 root     INFO     DEV_AND_TEST
+07-29 10:59 root     INFO     tloss: 0.6154
+07-29 10:59 root     INFO     acc:   0.8139
+07-29 10:59 root     INFO     auc:   0.8291
+07-29 10:59 root     INFO     f1:    0.7237
+07-29 10:59 root     INFO     The 7 epoch.
+07-29 11:01 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:01 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:03 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:03 root     INFO     Train
+07-29 11:03 root     INFO     tloss: 0.1337
+07-29 11:03 root     INFO     acc:   0.9473
+07-29 11:03 root     INFO     auc:   0.9360
+07-29 11:03 root     INFO     f1:    0.9154
+07-29 11:03 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 11:03 root     INFO     数据集大小: 677
+07-29 11:03 root     INFO     DEV_AND_TEST
+07-29 11:03 root     INFO     tloss: 0.7485
+07-29 11:03 root     INFO     acc:   0.7755
+07-29 11:03 root     INFO     auc:   0.8087
+07-29 11:03 root     INFO     f1:    0.6898
+07-29 11:03 root     INFO     The 8 epoch.
+07-29 11:05 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:05 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:06 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:07 root     INFO     Train
+07-29 11:07 root     INFO     tloss: 0.1293
+07-29 11:07 root     INFO     acc:   0.9504
+07-29 11:07 root     INFO     auc:   0.9402
+07-29 11:07 root     INFO     f1:    0.9206
+07-29 11:07 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 11:07 root     INFO     数据集大小: 677
+07-29 11:07 root     INFO     DEV_AND_TEST
+07-29 11:07 root     INFO     tloss: 0.6300
+07-29 11:07 root     INFO     acc:   0.8168
+07-29 11:07 root     INFO     auc:   0.8375
+07-29 11:07 root     INFO     f1:    0.7316
+07-29 11:08 root     INFO     The 9 epoch.
+07-29 11:08 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:08 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:09 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:11 root     INFO     Train
+07-29 11:11 root     INFO     tloss: 0.1149
+07-29 11:11 root     INFO     acc:   0.9566
+07-29 11:11 root     INFO     auc:   0.9472
+07-29 11:11 root     INFO     f1:    0.9305
+07-29 11:11 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 11:11 root     INFO     数据集大小: 677
+07-29 11:12 root     INFO     DEV_AND_TEST
+07-29 11:12 root     INFO     tloss: 0.5500
+07-29 11:12 root     INFO     acc:   0.8390
+07-29 11:12 root     INFO     auc:   0.8450
+07-29 11:12 root     INFO     f1:    0.7506
+07-29 11:12 root     INFO     The 10 epoch.
+07-29 11:12 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:13 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:15 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:16 root     INFO     Train
+07-29 11:16 root     INFO     tloss: 0.1139
+07-29 11:16 root     INFO     acc:   0.9562
+07-29 11:16 root     INFO     auc:   0.9477
+07-29 11:16 root     INFO     f1:    0.9302
+07-29 11:16 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 11:16 root     INFO     数据集大小: 677
+07-29 11:16 root     INFO     DEV_AND_TEST
+07-29 11:16 root     INFO     tloss: 0.5318
+07-29 11:16 root     INFO     acc:   0.8464
+07-29 11:16 root     INFO     auc:   0.8406
+07-29 11:16 root     INFO     f1:    0.7524
+07-29 11:16 root     INFO     The 11 epoch.
+07-29 11:16 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:17 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:19 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:20 root     INFO     Train
+07-29 11:20 root     INFO     tloss: 0.1018
+07-29 11:20 root     INFO     acc:   0.9611
+07-29 11:20 root     INFO     auc:   0.9534
+07-29 11:20 root     INFO     f1:    0.9378
+07-29 11:20 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 11:20 root     INFO     数据集大小: 677
+07-29 11:20 root     INFO     DEV_AND_TEST
+07-29 11:20 root     INFO     tloss: 0.5788
+07-29 11:20 root     INFO     acc:   0.8449
+07-29 11:20 root     INFO     auc:   0.8411
+07-29 11:20 root     INFO     f1:    0.7518
+07-29 11:20 root     INFO     The 12 epoch.
+07-29 11:22 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:23 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:23 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:24 root     INFO     Train
+07-29 11:24 root     INFO     tloss: 0.0962
+07-29 11:24 root     INFO     acc:   0.9632
+07-29 11:24 root     INFO     auc:   0.9558
+07-29 11:24 root     INFO     f1:    0.9413
+07-29 11:24 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07-29 11:24 root     INFO     数据集大小: 677
+07-29 11:24 root     INFO     DEV_AND_TEST
+07-29 11:24 root     INFO     tloss: 0.7028
+07-29 11:24 root     INFO     acc:   0.8124
+07-29 11:24 root     INFO     auc:   0.8312
+07-29 11:24 root     INFO     f1:    0.7245
+07-29 11:24 root     INFO     The 13 epoch.
+07-29 11:24 transformers.tokenization_utils ERROR    We need to remove 625 to truncate the inputbut the first sequence has a length 373. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:25 transformers.tokenization_utils ERROR    We need to remove 183 to truncate the inputbut the first sequence has a length 154. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+07-29 11:26 transformers.tokenization_utils ERROR    We need to remove 455 to truncate the inputbut the first sequence has a length 290. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.

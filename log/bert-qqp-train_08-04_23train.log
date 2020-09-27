@@ -1,0 +1,470 @@
+08-04 23:12 root     INFO     Namespace(batch_size=1000, dev_data='QQP_DEV', eval_batch_size=1998, eval_data='ontonotes/g_test.json', goal='open', gpu=False, input_dropout=0.2, learning_rate=0.001, load=False, log_dir='log', mention_dropout=0.5, mode='train', model_id='bert-qqp-train', model_save_dir='_model', num_epoch=10, reload_model_name=None, seed=1777, train_data='QQP_TRAIN')
+08-04 23:12 transformers.configuration_utils INFO     loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/ybai/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+08-04 23:12 transformers.configuration_utils INFO     Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+08-04 23:12 transformers.modeling_utils INFO     loading weights file https://cdn.huggingface.co/bert-base-uncased-pytorch_model.bin from cache at /home/ybai/.cache/torch/transformers/f2ee78bdd635b758cc0a12352586868bef80e47401abe4c4fcc3832421e7338b.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+08-04 23:12 transformers.modeling_utils INFO     All model checkpoint weights were used when initializing BertModel.
+
+08-04 23:12 transformers.modeling_utils INFO     All the weights of BertModel were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use BertModel for predictions without further training.
+08-04 23:13 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+08-04 23:13 root     INFO     数据集大小: 363846
+08-04 23:13 root     INFO     The 0 epoch.
+08-04 23:13 transformers.tokenization_utils ERROR    We need to remove 45 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:13 transformers.tokenization_utils ERROR    We need to remove 90 to truncate the inputbut the first sequence has a length 35. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:13 transformers.tokenization_utils ERROR    We need to remove 47 to truncate the inputbut the first sequence has a length 28. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:13 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:14 transformers.tokenization_utils ERROR    We need to remove 31 to truncate the inputbut the first sequence has a length 29. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:15 transformers.tokenization_utils ERROR    We need to remove 201 to truncate the inputbut the first sequence has a length 42. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:15 transformers.tokenization_utils ERROR    We need to remove 64 to truncate the inputbut the first sequence has a length 41. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:16 transformers.tokenization_utils ERROR    We need to remove 23 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:16 transformers.tokenization_utils ERROR    We need to remove 185 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:16 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:17 transformers.tokenization_utils ERROR    We need to remove 176 to truncate the inputbut the first sequence has a length 17. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:17 transformers.tokenization_utils ERROR    We need to remove 120 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:19 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:19 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:21 transformers.tokenization_utils ERROR    We need to remove 182 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:22 transformers.tokenization_utils ERROR    We need to remove 59 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:24 transformers.tokenization_utils ERROR    We need to remove 190 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:24 transformers.tokenization_utils ERROR    We need to remove 202 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:25 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:25 transformers.tokenization_utils ERROR    We need to remove 66 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:25 transformers.tokenization_utils ERROR    We need to remove 193 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:26 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:27 transformers.tokenization_utils ERROR    We need to remove 189 to truncate the inputbut the first sequence has a length 30. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:28 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:28 transformers.tokenization_utils ERROR    We need to remove 72 to truncate the inputbut the first sequence has a length 64. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:30 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:30 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:30 transformers.tokenization_utils ERROR    We need to remove 50 to truncate the inputbut the first sequence has a length 46. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:30 transformers.tokenization_utils ERROR    We need to remove 76 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:31 transformers.tokenization_utils ERROR    We need to remove 181 to truncate the inputbut the first sequence has a length 32. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:32 root     INFO     Train
+08-04 23:32 root     INFO     tloss: 0.5996
+08-04 23:32 root     INFO     acc:   0.6622
+08-04 23:32 root     INFO     auc:   0.5895
+08-04 23:32 root     INFO     f1:    0.4051
+08-04 23:32 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+08-04 23:32 root     INFO     数据集大小: 40430
+08-04 23:32 transformers.tokenization_utils ERROR    We need to remove 71 to truncate the inputbut the first sequence has a length 21. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:32 root     INFO     DEV
+08-04 23:32 root     INFO     tloss: 0.5610
+08-04 23:32 root     INFO     acc:   0.6675
+08-04 23:32 root     INFO     auc:   0.7247
+08-04 23:32 root     INFO     f1:    0.6759
+08-04 23:33 root     INFO     The 1 epoch.
+08-04 23:33 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:33 transformers.tokenization_utils ERROR    We need to remove 201 to truncate the inputbut the first sequence has a length 42. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:34 transformers.tokenization_utils ERROR    We need to remove 202 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:36 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:37 transformers.tokenization_utils ERROR    We need to remove 90 to truncate the inputbut the first sequence has a length 35. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:37 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:37 transformers.tokenization_utils ERROR    We need to remove 185 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:37 transformers.tokenization_utils ERROR    We need to remove 64 to truncate the inputbut the first sequence has a length 41. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:38 transformers.tokenization_utils ERROR    We need to remove 50 to truncate the inputbut the first sequence has a length 46. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:39 transformers.tokenization_utils ERROR    We need to remove 189 to truncate the inputbut the first sequence has a length 30. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:39 transformers.tokenization_utils ERROR    We need to remove 193 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:41 transformers.tokenization_utils ERROR    We need to remove 181 to truncate the inputbut the first sequence has a length 32. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:42 transformers.tokenization_utils ERROR    We need to remove 59 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:43 transformers.tokenization_utils ERROR    We need to remove 31 to truncate the inputbut the first sequence has a length 29. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:43 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:43 transformers.tokenization_utils ERROR    We need to remove 190 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:44 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:45 transformers.tokenization_utils ERROR    We need to remove 182 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:45 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:46 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:46 transformers.tokenization_utils ERROR    We need to remove 176 to truncate the inputbut the first sequence has a length 17. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:46 transformers.tokenization_utils ERROR    We need to remove 72 to truncate the inputbut the first sequence has a length 64. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:46 transformers.tokenization_utils ERROR    We need to remove 23 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:46 transformers.tokenization_utils ERROR    We need to remove 76 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:48 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:49 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:49 transformers.tokenization_utils ERROR    We need to remove 47 to truncate the inputbut the first sequence has a length 28. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:50 transformers.tokenization_utils ERROR    We need to remove 120 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:50 transformers.tokenization_utils ERROR    We need to remove 45 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:50 transformers.tokenization_utils ERROR    We need to remove 66 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:51 root     INFO     Train
+08-04 23:51 root     INFO     tloss: 0.4732
+08-04 23:51 root     INFO     acc:   0.7584
+08-04 23:51 root     INFO     auc:   0.7462
+08-04 23:51 root     INFO     f1:    0.6813
+08-04 23:51 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+08-04 23:51 root     INFO     数据集大小: 40430
+08-04 23:51 transformers.tokenization_utils ERROR    We need to remove 71 to truncate the inputbut the first sequence has a length 21. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:52 root     INFO     DEV
+08-04 23:52 root     INFO     tloss: 0.4489
+08-04 23:52 root     INFO     acc:   0.7737
+08-04 23:52 root     INFO     auc:   0.7975
+08-04 23:52 root     INFO     f1:    0.7428
+08-04 23:52 root     INFO     The 2 epoch.
+08-04 23:53 transformers.tokenization_utils ERROR    We need to remove 90 to truncate the inputbut the first sequence has a length 35. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:53 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:54 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:54 transformers.tokenization_utils ERROR    We need to remove 64 to truncate the inputbut the first sequence has a length 41. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:54 transformers.tokenization_utils ERROR    We need to remove 66 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:55 transformers.tokenization_utils ERROR    We need to remove 201 to truncate the inputbut the first sequence has a length 42. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:55 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:56 transformers.tokenization_utils ERROR    We need to remove 185 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:57 transformers.tokenization_utils ERROR    We need to remove 72 to truncate the inputbut the first sequence has a length 64. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:58 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:59 transformers.tokenization_utils ERROR    We need to remove 31 to truncate the inputbut the first sequence has a length 29. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:59 transformers.tokenization_utils ERROR    We need to remove 193 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-04 23:59 transformers.tokenization_utils ERROR    We need to remove 176 to truncate the inputbut the first sequence has a length 17. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:00 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:00 transformers.tokenization_utils ERROR    We need to remove 190 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:00 transformers.tokenization_utils ERROR    We need to remove 181 to truncate the inputbut the first sequence has a length 32. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:01 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:03 transformers.tokenization_utils ERROR    We need to remove 45 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:04 transformers.tokenization_utils ERROR    We need to remove 23 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:05 transformers.tokenization_utils ERROR    We need to remove 47 to truncate the inputbut the first sequence has a length 28. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:05 transformers.tokenization_utils ERROR    We need to remove 50 to truncate the inputbut the first sequence has a length 46. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:05 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:06 transformers.tokenization_utils ERROR    We need to remove 202 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:06 transformers.tokenization_utils ERROR    We need to remove 182 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:06 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:07 transformers.tokenization_utils ERROR    We need to remove 120 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:07 transformers.tokenization_utils ERROR    We need to remove 189 to truncate the inputbut the first sequence has a length 30. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:08 transformers.tokenization_utils ERROR    We need to remove 76 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:09 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:09 transformers.tokenization_utils ERROR    We need to remove 59 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:11 root     INFO     Train
+08-05 00:11 root     INFO     tloss: 0.4275
+08-05 00:11 root     INFO     acc:   0.7895
+08-05 00:11 root     INFO     auc:   0.7790
+08-05 00:11 root     INFO     f1:    0.7217
+08-05 00:11 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+08-05 00:11 root     INFO     数据集大小: 40430
+08-05 00:11 transformers.tokenization_utils ERROR    We need to remove 71 to truncate the inputbut the first sequence has a length 21. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:12 root     INFO     DEV
+08-05 00:12 root     INFO     tloss: 0.4397
+08-05 00:12 root     INFO     acc:   0.7808
+08-05 00:12 root     INFO     auc:   0.8087
+08-05 00:12 root     INFO     f1:    0.7545
+08-05 00:12 root     INFO     The 3 epoch.
+08-05 00:12 transformers.tokenization_utils ERROR    We need to remove 185 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:13 transformers.tokenization_utils ERROR    We need to remove 201 to truncate the inputbut the first sequence has a length 42. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:16 transformers.tokenization_utils ERROR    We need to remove 176 to truncate the inputbut the first sequence has a length 17. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:16 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:16 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:16 transformers.tokenization_utils ERROR    We need to remove 64 to truncate the inputbut the first sequence has a length 41. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:17 transformers.tokenization_utils ERROR    We need to remove 190 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:17 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:18 transformers.tokenization_utils ERROR    We need to remove 182 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:18 transformers.tokenization_utils ERROR    We need to remove 193 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:20 transformers.tokenization_utils ERROR    We need to remove 189 to truncate the inputbut the first sequence has a length 30. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:22 transformers.tokenization_utils ERROR    We need to remove 120 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:22 transformers.tokenization_utils ERROR    We need to remove 76 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:22 transformers.tokenization_utils ERROR    We need to remove 202 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:22 transformers.tokenization_utils ERROR    We need to remove 45 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:22 transformers.tokenization_utils ERROR    We need to remove 72 to truncate the inputbut the first sequence has a length 64. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:22 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:23 transformers.tokenization_utils ERROR    We need to remove 90 to truncate the inputbut the first sequence has a length 35. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:23 transformers.tokenization_utils ERROR    We need to remove 59 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:25 transformers.tokenization_utils ERROR    We need to remove 23 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:25 transformers.tokenization_utils ERROR    We need to remove 50 to truncate the inputbut the first sequence has a length 46. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:25 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:26 transformers.tokenization_utils ERROR    We need to remove 66 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:28 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:28 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:28 transformers.tokenization_utils ERROR    We need to remove 181 to truncate the inputbut the first sequence has a length 32. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:28 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:29 transformers.tokenization_utils ERROR    We need to remove 47 to truncate the inputbut the first sequence has a length 28. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:30 transformers.tokenization_utils ERROR    We need to remove 31 to truncate the inputbut the first sequence has a length 29. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:30 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:31 root     INFO     Train
+08-05 00:31 root     INFO     tloss: 0.4047
+08-05 00:31 root     INFO     acc:   0.8043
+08-05 00:31 root     INFO     auc:   0.7948
+08-05 00:31 root     INFO     f1:    0.7411
+08-05 00:31 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+08-05 00:31 root     INFO     数据集大小: 40430
+08-05 00:31 transformers.tokenization_utils ERROR    We need to remove 71 to truncate the inputbut the first sequence has a length 21. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:31 root     INFO     DEV
+08-05 00:31 root     INFO     tloss: 0.3990
+08-05 00:31 root     INFO     acc:   0.8073
+08-05 00:31 root     INFO     auc:   0.8226
+08-05 00:31 root     INFO     f1:    0.7709
+08-05 00:32 root     INFO     The 4 epoch.
+08-05 00:32 transformers.tokenization_utils ERROR    We need to remove 66 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:32 transformers.tokenization_utils ERROR    We need to remove 182 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:32 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:32 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:33 transformers.tokenization_utils ERROR    We need to remove 190 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:34 transformers.tokenization_utils ERROR    We need to remove 90 to truncate the inputbut the first sequence has a length 35. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:34 transformers.tokenization_utils ERROR    We need to remove 120 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:34 transformers.tokenization_utils ERROR    We need to remove 189 to truncate the inputbut the first sequence has a length 30. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:34 transformers.tokenization_utils ERROR    We need to remove 45 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:35 transformers.tokenization_utils ERROR    We need to remove 47 to truncate the inputbut the first sequence has a length 28. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:36 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:37 transformers.tokenization_utils ERROR    We need to remove 76 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:38 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:38 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:39 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:39 transformers.tokenization_utils ERROR    We need to remove 50 to truncate the inputbut the first sequence has a length 46. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:40 transformers.tokenization_utils ERROR    We need to remove 23 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:42 transformers.tokenization_utils ERROR    We need to remove 176 to truncate the inputbut the first sequence has a length 17. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:42 transformers.tokenization_utils ERROR    We need to remove 59 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:43 transformers.tokenization_utils ERROR    We need to remove 185 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:43 transformers.tokenization_utils ERROR    We need to remove 72 to truncate the inputbut the first sequence has a length 64. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:45 transformers.tokenization_utils ERROR    We need to remove 181 to truncate the inputbut the first sequence has a length 32. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:45 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:45 transformers.tokenization_utils ERROR    We need to remove 31 to truncate the inputbut the first sequence has a length 29. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:45 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:45 transformers.tokenization_utils ERROR    We need to remove 64 to truncate the inputbut the first sequence has a length 41. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:47 transformers.tokenization_utils ERROR    We need to remove 193 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:49 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:49 transformers.tokenization_utils ERROR    We need to remove 201 to truncate the inputbut the first sequence has a length 42. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:50 transformers.tokenization_utils ERROR    We need to remove 202 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:50 root     INFO     Train
+08-05 00:50 root     INFO     tloss: 0.3883
+08-05 00:50 root     INFO     acc:   0.8148
+08-05 00:50 root     INFO     auc:   0.8060
+08-05 00:50 root     INFO     f1:    0.7549
+08-05 00:50 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+08-05 00:50 root     INFO     数据集大小: 40430
+08-05 00:51 transformers.tokenization_utils ERROR    We need to remove 71 to truncate the inputbut the first sequence has a length 21. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:51 root     INFO     DEV
+08-05 00:51 root     INFO     tloss: 0.3799
+08-05 00:51 root     INFO     acc:   0.8183
+08-05 00:51 root     INFO     auc:   0.8310
+08-05 00:51 root     INFO     f1:    0.7808
+08-05 00:51 root     INFO     The 5 epoch.
+08-05 00:51 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:52 transformers.tokenization_utils ERROR    We need to remove 185 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:52 transformers.tokenization_utils ERROR    We need to remove 72 to truncate the inputbut the first sequence has a length 64. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:53 transformers.tokenization_utils ERROR    We need to remove 176 to truncate the inputbut the first sequence has a length 17. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:53 transformers.tokenization_utils ERROR    We need to remove 64 to truncate the inputbut the first sequence has a length 41. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:53 transformers.tokenization_utils ERROR    We need to remove 202 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:55 transformers.tokenization_utils ERROR    We need to remove 201 to truncate the inputbut the first sequence has a length 42. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:55 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:55 transformers.tokenization_utils ERROR    We need to remove 23 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:55 transformers.tokenization_utils ERROR    We need to remove 182 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:55 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:57 transformers.tokenization_utils ERROR    We need to remove 66 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 00:58 transformers.tokenization_utils ERROR    We need to remove 190 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:02 transformers.tokenization_utils ERROR    We need to remove 90 to truncate the inputbut the first sequence has a length 35. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:02 transformers.tokenization_utils ERROR    We need to remove 193 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:03 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:03 transformers.tokenization_utils ERROR    We need to remove 181 to truncate the inputbut the first sequence has a length 32. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:03 transformers.tokenization_utils ERROR    We need to remove 47 to truncate the inputbut the first sequence has a length 28. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:04 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:04 transformers.tokenization_utils ERROR    We need to remove 50 to truncate the inputbut the first sequence has a length 46. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:05 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:05 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:06 transformers.tokenization_utils ERROR    We need to remove 76 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:06 transformers.tokenization_utils ERROR    We need to remove 31 to truncate the inputbut the first sequence has a length 29. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:06 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:07 transformers.tokenization_utils ERROR    We need to remove 120 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:07 transformers.tokenization_utils ERROR    We need to remove 189 to truncate the inputbut the first sequence has a length 30. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:08 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:08 transformers.tokenization_utils ERROR    We need to remove 59 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:09 transformers.tokenization_utils ERROR    We need to remove 45 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:10 root     INFO     Train
+08-05 01:10 root     INFO     tloss: 0.3768
+08-05 01:10 root     INFO     acc:   0.8220
+08-05 01:10 root     INFO     auc:   0.8138
+08-05 01:10 root     INFO     f1:    0.7646
+08-05 01:10 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+08-05 01:10 root     INFO     数据集大小: 40430
+08-05 01:10 transformers.tokenization_utils ERROR    We need to remove 71 to truncate the inputbut the first sequence has a length 21. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:11 root     INFO     DEV
+08-05 01:11 root     INFO     tloss: 0.3841
+08-05 01:11 root     INFO     acc:   0.8158
+08-05 01:11 root     INFO     auc:   0.8337
+08-05 01:11 root     INFO     f1:    0.7829
+08-05 01:11 root     INFO     The 6 epoch.
+08-05 01:11 transformers.tokenization_utils ERROR    We need to remove 47 to truncate the inputbut the first sequence has a length 28. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:13 transformers.tokenization_utils ERROR    We need to remove 64 to truncate the inputbut the first sequence has a length 41. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:13 transformers.tokenization_utils ERROR    We need to remove 23 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:14 transformers.tokenization_utils ERROR    We need to remove 202 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:14 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:15 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:15 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:16 transformers.tokenization_utils ERROR    We need to remove 185 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:18 transformers.tokenization_utils ERROR    We need to remove 31 to truncate the inputbut the first sequence has a length 29. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:18 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:20 transformers.tokenization_utils ERROR    We need to remove 120 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:20 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:20 transformers.tokenization_utils ERROR    We need to remove 72 to truncate the inputbut the first sequence has a length 64. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:20 transformers.tokenization_utils ERROR    We need to remove 189 to truncate the inputbut the first sequence has a length 30. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:20 transformers.tokenization_utils ERROR    We need to remove 182 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:20 transformers.tokenization_utils ERROR    We need to remove 176 to truncate the inputbut the first sequence has a length 17. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:21 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:21 transformers.tokenization_utils ERROR    We need to remove 59 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:21 transformers.tokenization_utils ERROR    We need to remove 66 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:24 transformers.tokenization_utils ERROR    We need to remove 181 to truncate the inputbut the first sequence has a length 32. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:24 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:26 transformers.tokenization_utils ERROR    We need to remove 45 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:26 transformers.tokenization_utils ERROR    We need to remove 50 to truncate the inputbut the first sequence has a length 46. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:27 transformers.tokenization_utils ERROR    We need to remove 190 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:28 transformers.tokenization_utils ERROR    We need to remove 193 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:28 transformers.tokenization_utils ERROR    We need to remove 90 to truncate the inputbut the first sequence has a length 35. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:28 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:29 transformers.tokenization_utils ERROR    We need to remove 201 to truncate the inputbut the first sequence has a length 42. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:29 transformers.tokenization_utils ERROR    We need to remove 76 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:29 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:30 root     INFO     Train
+08-05 01:30 root     INFO     tloss: 0.3670
+08-05 01:30 root     INFO     acc:   0.8284
+08-05 01:30 root     INFO     auc:   0.8207
+08-05 01:30 root     INFO     f1:    0.7730
+08-05 01:30 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+08-05 01:30 root     INFO     数据集大小: 40430
+08-05 01:30 transformers.tokenization_utils ERROR    We need to remove 71 to truncate the inputbut the first sequence has a length 21. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:31 root     INFO     DEV
+08-05 01:31 root     INFO     tloss: 0.3552
+08-05 01:31 root     INFO     acc:   0.8344
+08-05 01:31 root     INFO     auc:   0.8402
+08-05 01:31 root     INFO     f1:    0.7931
+08-05 01:31 root     INFO     The 7 epoch.
+08-05 01:32 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:33 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:33 transformers.tokenization_utils ERROR    We need to remove 182 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:34 transformers.tokenization_utils ERROR    We need to remove 189 to truncate the inputbut the first sequence has a length 30. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:34 transformers.tokenization_utils ERROR    We need to remove 120 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:35 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:35 transformers.tokenization_utils ERROR    We need to remove 201 to truncate the inputbut the first sequence has a length 42. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:37 transformers.tokenization_utils ERROR    We need to remove 59 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:38 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:38 transformers.tokenization_utils ERROR    We need to remove 193 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:38 transformers.tokenization_utils ERROR    We need to remove 64 to truncate the inputbut the first sequence has a length 41. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:38 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:39 transformers.tokenization_utils ERROR    We need to remove 76 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:39 transformers.tokenization_utils ERROR    We need to remove 50 to truncate the inputbut the first sequence has a length 46. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:40 transformers.tokenization_utils ERROR    We need to remove 31 to truncate the inputbut the first sequence has a length 29. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:41 transformers.tokenization_utils ERROR    We need to remove 72 to truncate the inputbut the first sequence has a length 64. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:41 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:41 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:41 transformers.tokenization_utils ERROR    We need to remove 23 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:42 transformers.tokenization_utils ERROR    We need to remove 66 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:44 transformers.tokenization_utils ERROR    We need to remove 202 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:45 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:45 transformers.tokenization_utils ERROR    We need to remove 90 to truncate the inputbut the first sequence has a length 35. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:45 transformers.tokenization_utils ERROR    We need to remove 185 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:46 transformers.tokenization_utils ERROR    We need to remove 45 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:47 transformers.tokenization_utils ERROR    We need to remove 181 to truncate the inputbut the first sequence has a length 32. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:47 transformers.tokenization_utils ERROR    We need to remove 47 to truncate the inputbut the first sequence has a length 28. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:48 transformers.tokenization_utils ERROR    We need to remove 176 to truncate the inputbut the first sequence has a length 17. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:48 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:48 transformers.tokenization_utils ERROR    We need to remove 190 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:50 root     INFO     Train
+08-05 01:50 root     INFO     tloss: 0.3581
+08-05 01:50 root     INFO     acc:   0.8334
+08-05 01:50 root     INFO     auc:   0.8256
+08-05 01:50 root     INFO     f1:    0.7792
+08-05 01:50 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+08-05 01:50 root     INFO     数据集大小: 40430
+08-05 01:50 transformers.tokenization_utils ERROR    We need to remove 71 to truncate the inputbut the first sequence has a length 21. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:50 root     INFO     DEV
+08-05 01:50 root     INFO     tloss: 0.3443
+08-05 01:50 root     INFO     acc:   0.8418
+08-05 01:50 root     INFO     auc:   0.8404
+08-05 01:50 root     INFO     f1:    0.7954
+08-05 01:50 root     INFO     The 8 epoch.
+08-05 01:50 transformers.tokenization_utils ERROR    We need to remove 201 to truncate the inputbut the first sequence has a length 42. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:51 transformers.tokenization_utils ERROR    We need to remove 190 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:51 transformers.tokenization_utils ERROR    We need to remove 182 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:51 transformers.tokenization_utils ERROR    We need to remove 120 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:51 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:52 transformers.tokenization_utils ERROR    We need to remove 90 to truncate the inputbut the first sequence has a length 35. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:52 transformers.tokenization_utils ERROR    We need to remove 50 to truncate the inputbut the first sequence has a length 46. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:53 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:54 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:55 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:55 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:58 transformers.tokenization_utils ERROR    We need to remove 64 to truncate the inputbut the first sequence has a length 41. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:58 transformers.tokenization_utils ERROR    We need to remove 202 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 01:58 transformers.tokenization_utils ERROR    We need to remove 66 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:00 transformers.tokenization_utils ERROR    We need to remove 59 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:00 transformers.tokenization_utils ERROR    We need to remove 176 to truncate the inputbut the first sequence has a length 17. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:01 transformers.tokenization_utils ERROR    We need to remove 189 to truncate the inputbut the first sequence has a length 30. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:02 transformers.tokenization_utils ERROR    We need to remove 185 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:02 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:02 transformers.tokenization_utils ERROR    We need to remove 76 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:03 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:03 transformers.tokenization_utils ERROR    We need to remove 72 to truncate the inputbut the first sequence has a length 64. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:04 transformers.tokenization_utils ERROR    We need to remove 181 to truncate the inputbut the first sequence has a length 32. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:05 transformers.tokenization_utils ERROR    We need to remove 23 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:05 transformers.tokenization_utils ERROR    We need to remove 31 to truncate the inputbut the first sequence has a length 29. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:08 transformers.tokenization_utils ERROR    We need to remove 193 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:08 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:09 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:09 transformers.tokenization_utils ERROR    We need to remove 47 to truncate the inputbut the first sequence has a length 28. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:09 transformers.tokenization_utils ERROR    We need to remove 45 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:09 root     INFO     Train
+08-05 02:09 root     INFO     tloss: 0.3503
+08-05 02:09 root     INFO     acc:   0.8380
+08-05 02:09 root     INFO     auc:   0.8307
+08-05 02:09 root     INFO     f1:    0.7854
+08-05 02:09 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+08-05 02:09 root     INFO     数据集大小: 40430
+08-05 02:09 transformers.tokenization_utils ERROR    We need to remove 71 to truncate the inputbut the first sequence has a length 21. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:10 root     INFO     DEV
+08-05 02:10 root     INFO     tloss: 0.3494
+08-05 02:10 root     INFO     acc:   0.8385
+08-05 02:10 root     INFO     auc:   0.8466
+08-05 02:10 root     INFO     f1:    0.8000
+08-05 02:10 root     INFO     The 9 epoch.
+08-05 02:11 transformers.tokenization_utils ERROR    We need to remove 182 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:11 transformers.tokenization_utils ERROR    We need to remove 193 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:12 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:12 transformers.tokenization_utils ERROR    We need to remove 202 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:13 transformers.tokenization_utils ERROR    We need to remove 189 to truncate the inputbut the first sequence has a length 30. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:13 transformers.tokenization_utils ERROR    We need to remove 190 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:14 transformers.tokenization_utils ERROR    We need to remove 90 to truncate the inputbut the first sequence has a length 35. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:15 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:15 transformers.tokenization_utils ERROR    We need to remove 181 to truncate the inputbut the first sequence has a length 32. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:16 transformers.tokenization_utils ERROR    We need to remove 45 to truncate the inputbut the first sequence has a length 34. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:16 transformers.tokenization_utils ERROR    We need to remove 47 to truncate the inputbut the first sequence has a length 28. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:17 transformers.tokenization_utils ERROR    We need to remove 176 to truncate the inputbut the first sequence has a length 17. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:18 transformers.tokenization_utils ERROR    We need to remove 120 to truncate the inputbut the first sequence has a length 31. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:18 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:18 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:19 transformers.tokenization_utils ERROR    We need to remove 39 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:20 transformers.tokenization_utils ERROR    We need to remove 64 to truncate the inputbut the first sequence has a length 41. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:22 transformers.tokenization_utils ERROR    We need to remove 23 to truncate the inputbut the first sequence has a length 20. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:22 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:23 transformers.tokenization_utils ERROR    We need to remove 72 to truncate the inputbut the first sequence has a length 64. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:24 transformers.tokenization_utils ERROR    We need to remove 201 to truncate the inputbut the first sequence has a length 42. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:24 transformers.tokenization_utils ERROR    We need to remove 31 to truncate the inputbut the first sequence has a length 29. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:24 transformers.tokenization_utils ERROR    We need to remove 195 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:24 transformers.tokenization_utils ERROR    We need to remove 192 to truncate the inputbut the first sequence has a length 33. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:24 transformers.tokenization_utils ERROR    We need to remove 185 to truncate the inputbut the first sequence has a length 36. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:25 transformers.tokenization_utils ERROR    We need to remove 59 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:25 transformers.tokenization_utils ERROR    We need to remove 66 to truncate the inputbut the first sequence has a length 43. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:26 transformers.tokenization_utils ERROR    We need to remove 50 to truncate the inputbut the first sequence has a length 46. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:27 transformers.tokenization_utils ERROR    We need to remove 184 to truncate the inputbut the first sequence has a length 25. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:28 transformers.tokenization_utils ERROR    We need to remove 76 to truncate the inputbut the first sequence has a length 57. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:29 root     INFO     Train
+08-05 02:29 root     INFO     tloss: 0.3431
+08-05 02:29 root     INFO     acc:   0.8420
+08-05 02:29 root     INFO     auc:   0.8351
+08-05 02:29 root     INFO     f1:    0.7908
+08-05 02:29 transformers.tokenization_utils_base INFO     loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ybai/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+08-05 02:29 root     INFO     数据集大小: 40430
+08-05 02:29 transformers.tokenization_utils ERROR    We need to remove 71 to truncate the inputbut the first sequence has a length 21. Please select another truncation strategy than TruncationStrategy.ONLY_FIRST, for instance 'longest_first' or 'only_second'.
+08-05 02:30 root     INFO     DEV
+08-05 02:30 root     INFO     tloss: 0.3286
+08-05 02:30 root     INFO     acc:   0.8512
+08-05 02:30 root     INFO     auc:   0.8424
+08-05 02:30 root     INFO     f1:    0.8001
